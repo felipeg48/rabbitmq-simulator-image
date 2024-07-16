@@ -1,0 +1,8 @@
+{
+	"mgmt": {
+		"host": "rabbitmq",
+		"port": 15672,
+		"user": "guest",
+		"pass": "guest"
+	}
+}

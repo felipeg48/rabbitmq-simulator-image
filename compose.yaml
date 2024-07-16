@@ -1,0 +1,15 @@
+services:
+  rabbitmq:
+    hostname: rabbitmq
+    container_name: rabbitmq
+    image: rabbitmq:management-alpine
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+  
+  simulator:
+    build: .
+    container_name: simulator
+    hostname: simulator
+    ports:
+      - "3000:3000"
